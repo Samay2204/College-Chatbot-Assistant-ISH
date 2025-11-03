@@ -39,4 +39,7 @@ def create_app(test_config=None):
     from . import chatbot
     app.register_blueprint(chatbot.bp)
 
+    from . import upload
+    app.register_blueprint(upload.bp)
+
     return app
